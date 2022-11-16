@@ -1,0 +1,311 @@
+/*======================
+======Globals===========
+========================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  height: 200px;
+  width: 150px;
+  object-fit: cover;
+}
+li {
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #ffff;
+  cursor: pointer;
+  width: 100%;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+  line-height: 1.8;
+}
+h3 {
+  color: #ff0000;
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.container {
+  display: flex;
+}
+.menu {
+  display: none;
+}
+/*===================
+======navbar=========
+=====================*/
+header {
+  flex: 0.8;
+  position: relative;
+  margin-right: 1.5rem;
+  height: 100vh;
+}
+nav {
+  position: fixed;
+  background-color: #ff0000;
+  padding: 3rem 3rem;
+  color: #ffff;
+  height: 100%;
+}
+nav h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+nav li {
+  padding: 0.6rem 0.8rem;
+  border-radius: 20px;
+  transition: all ease 0.6s;
+}
+nav li:hover {
+  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  transform: translateX(5%);
+}
+
+/*===================
+=======main==========
+=====================*/
+main {
+  flex: 4;
+  padding: 4rem;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/*=================
+=====showcase======
+===================*/
+.showcase {
+  margin-bottom: 2rem;
+}
+
+.line {
+  height: 0.3rem;
+  width: 3rem;
+  background-color: red;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.gallery img {
+  width: 47%;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+.gallery img:hover {
+  opacity: 0.6;
+  transform: scale(1.03);
+}
+.gallery img:nth-child(1) {
+  height: 350px;
+}
+.gallery img:nth-child(2) {
+  height: 350px;
+}
+/*==================
+======services======
+====================*/
+#services {
+  margin-top: 2rem;
+}
+/*==================
+======designers======
+====================*/
+#designers {
+  margin: 5rem 0;
+}
+#designers span {
+  color: black;
+}
+#designers h4 {
+  color: black;
+  margin: 2rem 0;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card {
+  background-color: #f1f1f1;
+  margin-right: 2rem;
+  transition: all ease-in-out 0.7s;
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: all easei 0.4s;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+}
+.card-content {
+  padding: 0.8rem 1rem;
+  padding-bottom: 2rem;
+}
+.card h5 {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+}
+.card h6 {
+  opacity: 0.4;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.card p {
+  font-size: 0.8rem;
+}
+/*==================
+======packages======
+====================*/
+.planes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.plane {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+.plane:hover {
+  transform: scale(1.02);
+  opacity: 0.7;
+}
+.plane h4 {
+  z-index: 0;
+  color: white;
+  padding: 1rem 0;
+}
+.gray {
+  background-color: gray;
+}
+.gray-button {
+  background-color: white;
+  padding: 1rem;
+  opacity: 1;
+}
+.gray-button:hover {
+  background-color: #f44336;
+  color: white;
+}
+.red-button {
+  background-color: white;
+  padding: 1rem;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+}
+.red-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.red {
+  background-color: #f44336;
+}
+.plane span {
+  padding: 0.7rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}
+.plane button {
+  width: 20%;
+  margin: 1rem auto;
+  border: none;
+  cursor: pointer;
+}
+
+hr {
+  opacity: 0.5;
+}
+/*==================
+======contact======
+====================*/
+#contact {
+  margin: 3rem 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1rem;
+}
+label {
+  font-size: 0.8rem;
+}
+input {
+  border: 1px rgb(148, 148, 148) solid;
+  padding: 0.6rem;
+  margin-bottom: 0.7rem;
+}
+form button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: gray;
+}
+
+/*footer*/
+footer {
+  background-color: #616161;
+
+  padding: 4em 6rem 4rem 18rem;
+}
+footer h1 {
+  color: #f44336;
+  text-shadow: 2px 2px 2px rgba(206, 89, 55, 0);
+}
+.footer-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link {
+  margin: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all ease-in-out 0.4s;
+  cursor: pointer;
+}
+.link:hover {
+  opacity: 0.7;
+  transform: scale(1.03);
+  transform: translateX(10px);
+}
+footer i {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  color: white;
+}
